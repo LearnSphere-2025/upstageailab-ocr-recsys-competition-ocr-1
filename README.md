@@ -1,13 +1,28 @@
-# OCR Competition Pipeline (DBNet + Hydra)
+# OCR Competition Pipeline
 
 ## Team
 
 | ![김문수](https://avatars.githubusercontent.com/ashrate) | ![이상현](https://avatars.githubusercontent.com/yourshlee) | ![조선미](https://avatars.githubusercontent.com/LearnSphere-2025) | ![채병기](https://avatars.githubusercontent.com/avatar196kc) | ![염창환](https://avatars.githubusercontent.com/cat2oon) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 | [김문수](https://github.com/ashrate) | [이상현](https://github.com/yourshlee) | [조선미](https://github.com/LearnSphere-2025) | [채병기](https://github.com/avatar196kc) | [염창환](https://github.com/cat2oon) |
-| 팀장 · 코드 구현 | 코드 실험 | 전처리/후처리/의사라벨링 실험 | 베이스라인 점검 | 미참여 |
+| 팀장 · 총괄 | 코드 실험 | 전처리/후처리/의사 라벨링 실험 | 코드 구현 | 미참여 |
 
 ---
+
+
+---
+
+## 문제 정의 및 주요 설정
+- **문제 유형**: AI 모델을 사용해 영수증 이미지에서 텍스트 영역을 정확히 검출하는 Detection 경진대회
+- **Baseline**: 초기 h-mean이 0.80 이상으로 출발하며, 로컬 검증 결과가 리더보드와 거의 일치 → 안정적인 실험 환경 구축
+- **Backbone 선택**: 모델 크기가 커질수록 성능은 상승하지만 GPU 메모리 제약으로 중간 사이즈 `ecaresnet50d` 채택
+- **입력 해상도**: 스케일을 크게 할수록 성능이 오르지만, 리소스 한계로 Scale 704에서 실험 진행
+
+## 전처리·후처리 & 시각화 성과
+- **전처리 (CLAHE / Deskew / Denoise)** → 검증 점수 하락으로 적용 중단
+- **전처리 (배경 제거)** → 모델 성능 저하로 실패
+- **라벨 노이즈 검토** → Cleval 평가 특성상 영향 미미하여 수정 없이 진행
+- **후처리 (thresh & box_thresh 튜닝)** → 정밀도 개선에 효과적 (성공 사례)
 
 ## 0. Overview
 - **Framework**: PyTorch Lightning 2.x + Hydra 1.2
@@ -126,9 +141,3 @@ python code_1016/ocr/utils/convert_submission.py \
 - [PyTorch Lightning](https://lightning.ai/)
 - [Hydra](https://hydra.cc/)
 - [Albumentations](https://albumentations.ai/)
-
----
-
-## 문의
-- Issue 또는 PR로 의견을 남겨 주세요.
-- 발표 자료 및 로그는 `code_1017_git/` 폴더를 참고하세요.
