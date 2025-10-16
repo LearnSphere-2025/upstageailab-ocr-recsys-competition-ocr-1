@@ -5,7 +5,7 @@
 | ![김문수](https://avatars.githubusercontent.com/ashrate) | ![이상현](https://avatars.githubusercontent.com/yourshlee) | ![조선미](https://avatars.githubusercontent.com/LearnSphere-2025) | ![채병기](https://avatars.githubusercontent.com/avatar196kc) | ![염창환](https://avatars.githubusercontent.com/cat2oon) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 | [김문수](https://github.com/ashrate) | [이상현](https://github.com/yourshlee) | [조선미](https://github.com/LearnSphere-2025) | [채병기](https://github.com/avatar196kc) | [염창환](https://github.com/cat2oon) |
-| 팀장 · 파이프라인 총괄 | 데이터 증강 · pseudo labeling | 학습 파라미터 & 실험 관리 | 모델 서빙 & 리포트 | 미참여 |
+| 팀장 · 코드 구현 | 코드 실험 | 전처리/후처리/의사라벨링 실험 | 베이스라인 점검 | 미참여 |
 
 ---
 
