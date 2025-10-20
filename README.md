@@ -5,7 +5,7 @@
 | ![김문수](https://avatars.githubusercontent.com/ashrate) | ![이상현](https://avatars.githubusercontent.com/yourshlee) | ![조선미](https://avatars.githubusercontent.com/LearnSphere-2025) | ![채병기](https://avatars.githubusercontent.com/avatar196kc) | ![염창환](https://avatars.githubusercontent.com/cat2oon) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 | [김문수](https://github.com/ashrate) | [이상현](https://github.com/yourshlee) | [조선미](https://github.com/LearnSphere-2025) | [채병기](https://github.com/avatar196kc) | [염창환](https://github.com/cat2oon) |
-| 팀장 · 총괄 | 코드 실험 | 전처리/후처리/의사 라벨링 실험 | 코드 구현 | 미참여 |
+| 팀장 · 총괄 | 코드 실험 | 전처리/후처리/의사 라벨링 실험 및 발표 | 코드 구현 | 미참여 |
 
 ---
 
